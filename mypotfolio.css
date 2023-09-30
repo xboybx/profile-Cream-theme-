@@ -1,0 +1,708 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: border-box;
+    font-family: monospace;
+}
+
+
+
+#PROJECTS,
+#CONTACT {
+    height: 100vh;
+}
+
+/* ======================checking testing divs============================================= */
+
+/* .herosec,.about-text,.maincointainer{
+    border: 3px dotted rgb(0, 0, 0);
+}
+.aboutsection{
+    border: 3px dotted rgb(255, 0, 0);
+} */
+/* #HOME,
+#ABOUT,
+#SERVICES,
+#CONTACT{
+ border:2px solid green;
+} */
+
+SECTION {
+    height: 55rem;
+    background-color: #f2f0dd;
+}
+
+
+/* ================================================================================= */
+
+/* ===========HOVER ANIMATIONS===================================================== */
+.border {
+    border: 1px solid transparent;
+    border-radius: 0.70rem;
+    margin-bottom: 10px;
+    padding: 1px 5px 2px 5px;
+}
+
+.border:hover {
+    border: 2px solid #37393d;
+
+
+}
+
+
+.navbar a:hover,
+.navbar a.active {
+    /* color: #1d2d44; */
+    color: #37393d;
+
+
+
+}
+
+/* ------------------------------MAINCONTAINER------------------------------------------------- */
+
+.maincointainer .herosec {
+    /* background-color: #1d2d44; */
+    background-color: #f2f0dd;
+    /* background-color: #f0ebd8; */
+
+
+}
+
+.maincointainer {
+    /* background-color: #1d2d44; */
+    background-color: #f2f0dd;
+
+
+    /* background-color: rgb(139, 86, 246); */
+    height: 100%;
+    width: auto;
+}
+
+/* =====================Nav bar=================================================== */
+.navbar {
+    display: flex;
+    background-color: none;
+    height: 3.9rem;
+    width: 100%;
+    background-image: linear-gradient(135deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0));
+    border-radius: 2px;
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.13);
+    position: fixed;
+    padding: 0px;
+    margin-top: 0px;
+
+
+}
+
+/* ===============================Nav bar menu items list=============================== */
+ul {
+    text-decoration: none;
+    display: flex;
+    justify-content: end;
+    padding-top: 10px;
+    padding-right: 70px;
+    margin-right: 2rem;
+    margin-left: 60rem;
+    /*maigin to the whole ul*/
+}
+
+/* ===============================Nav bar menu items list's links style=============================== */
+
+ul a {
+    font-family: 'Young Serif', serif;
+    text-decoration: none;
+    font-size: 1.30rem;
+    /* color: aliceblue; */
+    color: #37393d;
+
+
+
+    transition: 0.50s;
+}
+
+
+/* ===============================Nav bar menu items list style=============================== */
+li {
+    list-style-type: none;
+    margin-right: 3rem;
+    /*maigin between the li*/
+    font-size: 20px;
+    font-weight: 800;
+
+}
+
+/* =============================nav bar mynamelogo===================================== */
+.namelogo {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 1.5rem;
+
+}
+
+/* =============================nav bar mynamelogo  J's style===================================== */
+
+.fa-solid.fa-j {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.namelogo i {
+    text-align: center;
+    height: 40px;
+    width: 40px;
+    /* background-color: rgb(186, 157, 246); */
+    background-color: #fffacf;
+    border-radius: 50%;
+    padding: .20rem;
+    margin-right: 5px;
+    font-weight: 900;
+    font-size: 2rem;
+    color: #303032;
+    ;
+}
+
+/* --------------------------------------------NAVBAR MENU ICON------------------------------------ */
+.fa-solid.fa-bars {
+    color: #37393d;
+    font-size: 2rem;
+    align-self: center;
+    margin-left: -6rem;
+    display: none;
+}
+
+/* =====================hero section============================================================ */
+.sparkle1 img {
+    position: absolute;
+    left: 35.4rem;
+    top: 17rem;
+    animation: Sparklefloating 3s ease-in-out 1s infinite;
+}
+
+.sparkle2 img {
+    position: absolute;
+    left: 12rem;
+    top: 35rem;
+    animation: Sparklefloating2 3s ease-in-out 1s infinite;
+
+
+}
+
+@keyframes Sparklefloating {
+    0% {
+        transform: translate(0, 0px);
+        
+    }
+    
+    50% {
+        transform: translate(0, 4px);
+        
+    }
+    
+    100% {
+        transform: translate(0, -0px);
+    }
+   }
+
+@keyframes Sparklefloating2 {
+    0% {
+        transform: translate(0, -0px);
+    }
+
+    50% {
+        transform: translate(0, 4px);
+    }
+
+    100% {
+        transform: translate(0, 0px);
+    }
+}
+
+
+
+
+.herosec {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 15rem;
+    padding-bottom: 5rem;
+    /* background-color:  rgb(139, 86, 246); */
+
+    background-color: #f2f0dd;
+
+
+}
+
+/*---------------------------- profile pic settings---------------------------------------------- */
+.profilepic {
+
+    height: 350px;
+    width: 350px;
+    border-radius: 50%;
+    overflow: hidden;
+    /*border: 10px solid rgb(167, 125, 249); */
+    border: 10px solid #37393d;
+    box-shadow: 5px 7px 25px rgba(0, 0, 0, 0.5);
+}
+
+.profilepic img {
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    transition: 0.5s;
+}
+
+.profilepic img:hover {
+    transform: scale(1.1);
+}
+
+.herotext {
+    max-width: 500px;
+    flex-direction: column;
+}
+
+.herotext p {
+    font-size: 1.30rem;
+    font-weight: 500;
+    font-family: Geologica;
+    color: #000000;
+    line-height: 1.55rem;
+    padding-top: 0.2rem;
+}
+
+/* ------------------------hero text------------------------------------------------ */
+#hi {
+    font-family: 'Kanit', sans-serif;
+    letter-spacing: 0.20rem;
+}
+
+#hiemoji {
+    font-size: 3rem;
+    margin-left: -1.2rem;
+    animation: wave-animation 1.8s 0s infinite;
+    transform-origin: 70% 70%;
+    /* Pivot around the bottom-left palm */
+    display: inline-block;
+}
+
+
+@keyframes wave-animation {
+    0% {
+        transform: rotate(0.0deg)
+    }
+
+    10% {
+        transform: rotate(14.0deg)
+    }
+
+    /* The following five values can be played with to make the waving more or less extreme */
+    20% {
+        transform: rotate(-8.0deg)
+    }
+
+    30% {
+        transform: rotate(14.0deg)
+    }
+
+    40% {
+        transform: rotate(-4.0deg)
+    }
+
+    50% {
+        transform: rotate(10.0deg)
+    }
+
+    60% {
+        transform: rotate(0.0deg)
+    }
+
+    /* Reset for the last half to pause */
+    100% {
+        transform: rotate(0.0deg)
+    }
+}
+
+.nameaka {
+    FONT-FAMILY: 'Young Serif', serif;
+    font-size: 1.25rem;
+    letter-spacing: 0.40rem;
+
+}
+
+.herotext h2 {
+    font-size: 2rem;
+    /* font-family: 'Sora', sans-serif; */
+    font-family: 'Young Serif', serif;
+    margin-bottom: 0.50rem;
+    /* color: rgb(206, 184, 250); */
+    color: rgb(0, 0, 0);
+}
+
+.herotext h1 {
+    font-family: Press Start 2P;
+}
+
+#Skillnames {
+    color: #37393d;
+    font-family: 'Young Serif', serif;
+
+}
+
+/* ---------------buttons------------------------- */
+
+
+.butongroup {
+    margin: 40px 0px 30px 0px;
+    transition: 0.50s;
+
+
+}
+
+.butongroup a {
+    font-size: 1.750rem;
+    text-decoration: none;
+
+}
+
+
+.butongroup .btn1 {
+
+    border: 2px solid white;
+    border-radius: 8px;
+    /* background-color: rgb(177, 139, 255); */
+    background-color: #37393d;
+    color: #f0ebd8;
+    padding: 10px 112px 10px 112px;
+    margin-right: 10px;
+    box-shadow: 0 10px 10px -8px rgba(0 0 0/98%);
+    transition: 0.50s;
+
+}
+
+
+
+.butongroup .btn2 {
+    border: 2px solid white;
+    border-radius: 40px;
+    /* background-color: rgb(177, 139, 255); */
+    background-color: #1d2d44;
+    color: #f0ebd8;
+
+    padding: 10px 35px 10.8px 38px;
+    box-shadow: 0 10px 10px -8px rgba(0, 0, 0, 98%);
+    /*button shadow*/
+}
+
+.btn1:hover {
+    border: 2px solid rgb(58, 56, 56);
+    background-color: #f0ebd8;
+    color: #000000;
+}
+
+.butongroup:hover {
+
+    transform: scale(1.03);
+}
+
+/* .btn2:hover {
+    border: 2px solid #f0ebd8;
+} */
+
+/* -------------------Social icons------------------------- */
+
+
+.herotext .socials i {
+    /* color: rgb(248, 253, 224); */
+    color: #37393d;
+    margin-right: 1.7rem;
+    font-size: 1.78rem;
+    transition: 0.5s;
+
+}
+
+
+
+
+.herotext .socials .fa-facebook:hover {
+    color: #3b5998;
+    transform: rotate(360deg);
+}
+
+.herotext .socials .fa-instagram:hover {
+    color: #feda75;
+    transform: rotate(360deg);
+}
+
+.herotext .socials .fa-linkedin:hover {
+    color: #0072b1;
+    transform: rotate(360deg);
+}
+
+.herotext .socials .fa-youtube:hover {
+    color: #c4302b;
+
+    transform: rotate(360deg);
+}
+
+.herotext .socials .fa-soundcloud:hover {
+    color: #ff7700;
+    transform: rotate(360deg);
+}
+
+.socials {
+    margin-left: 20px;
+    animation: socialsfloating 2.8s ease-in-out 0.40s infinite;
+}
+
+@keyframes socialsfloating {
+    0% {
+        transform: translate(0, 0px);
+    }
+
+    50% {
+        transform: translate(0, 5px);
+    }
+
+    100% {
+        transform: translate(0, -0px);
+    }
+}
+
+/* =================================================-----ABOUT  PAGE--------============================== */
+
+.aboutsection {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#ABOUT,
+#CONTACT {
+
+    background-color: #f2f0dd00;
+
+}
+
+.about-text h1 {
+    font-size: 3rem;
+    padding-left: 3rem;
+    margin-bottom: 1.3rem;
+    margin-top: 15rem;
+}
+
+
+.aboutsection p {
+    font-family: 'Geologica', sans-serif;
+    text-align: left;
+    font-size: 1.4rem;
+    margin-right: 12rem;
+    padding-left: 3rem;
+    font-weight: 320;
+    line-height: 2rem;
+    margin-bottom: 13rem;
+    opacity: 0.85;
+
+}
+
+.me {
+    /* color: rgb(207, 188, 246); */
+    font-family: 'Young Serif', serif;
+
+
+    color: rgb(0, 0, 0);
+
+}
+
+/* =========================================about sec img======================================== */
+
+#aboutme {
+    font-family: 'Young Serif', serif;
+    color: #37393d;
+}
+
+.about-text {
+    max-width: 1024px;
+}
+
+.aboutimg {
+    margin-right: 3rem;
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+    /* border: 6px solid rgb(167, 125, 249); */
+    border: 6px solid #37393d;
+    box-shadow: 5px 7px 25px rgba(0, 0, 0, 0.5);
+    margin-top: 4.5rem;
+}
+
+.aboutimg img {
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    transition: 0.5s;
+}
+
+.aboutimg img:hover {
+    transform: rotate(360deg);
+}
+
+.aboutsection .butongroup {
+    align-self: flex-end;
+
+}
+
+
+.butongroup2 {
+    position: relative;
+    border: 2px solid white;
+    border-radius: 40px;
+    /* background-color: rgb(177, 139, 255); */
+    background-color: #37393d;
+    padding: 10px 35px 10.8px 38px;
+    box-shadow: 0 10px 10px -8px rgba(0, 0, 0, 98%);
+    top: 13rem;
+    left: -53.5rem;
+    transition: 0.50s;
+}
+
+.butongroup2 a {
+    font-size: 1.750rem;
+    text-decoration: none;
+    color: #f0ebd8;
+    transition: 3.5s;
+}
+
+.butongroup2:hover {
+    border: 2px solid#ddca87;
+    transform: scale(1.1);
+}
+
+/* --------------------------------------------------SEVICES AND PROJECTS----------------------------------- */
+
+.my_services_box {
+    background-color: rgb(55, 57, 61, 0.30);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.35);
+    height: 400PX;
+    width: 90%;
+    margin-left: 5rem;
+    margin-top: 2rem;
+    border-radius: 30px;
+    transition: 0.50s;
+}
+
+.my_services_box:hover {
+    transform: scale(1.02);
+}
+
+.my_services_box h1 {
+    padding-left: 1rem;
+
+}
+
+.services_heading_2 {
+    font-size: 2.30em;
+    FONT-WEIGHT: 100;
+    display: inline-flex;
+    align-items: center;
+    margin-left: 3rem;
+    margin-top: 3rem;
+}
+
+.fa-solid.fa-music {
+    padding-top: 0.20rem;
+    color: #f0ebd8;
+}
+
+.services_main_heading {
+    font-family: 'Young Serif', serif;
+    margin-left: 11rem;
+    font-weight: 600;
+    font-size: 2.4rem;
+
+}
+
+.services_MY {
+    font-family: 'Young Serif', serif;
+    color: #000000
+}
+
+.SERVICESection {
+    margin-top: 12rem;
+}
+
+.SERVICESection p {
+    padding: 5rem;
+    font-size: 1.8rem;
+    font-weight: 600;
+
+}
+
+#services_typed {
+    font-size: 3rem;
+    padding-left: 1rem;
+    font-family: 'Young Serif', serif;
+    color: #37393d;
+
+}
+
+.book_now_btn a {
+    position: relative;
+    right: -87rem;
+    bottom: 2.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 3.2rem;
+    width: 8rem;
+    border-radius: 10px;
+    /* background-color: rgb(177, 139, 255); */
+    background-image: linear-gradient(135deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0));
+    color: #f0ebd8;
+    text-decoration: none;
+    font-size: 1.4rem;
+    /* padding: 10px 112px 10px 112px; */
+    box-shadow: 0 10px 10px -8px rgba(0 0 0/40%);
+    transition: 0.60s;
+
+}
+
+.book_now_btn a:hover {
+    color: #000000;
+    transform: scale(1.5);
+}
+
+
+/* ----------------------------------------------CONTACT,FOOTER-------------------------------------------- */
+#CONTACT {
+    height: 5rem;
+    background-color: rgb(55, 57, 61, 0.70);
+
+    background-image: linear-gradient(216deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0));
+    display: flex;
+    justify-content: center;
+
+}
+
+#CONTACT p {
+    padding-top: 15px;
+}
+
+.fa-solid.fa-phone,
+.fa-solid.fa-envelope {
+    padding-right: 10px;
+}
+
+
+.copyright {
+    font-size: 1.05rem;
+    padding-left: 95px;
+}
+
+#csymbol {
+    font-size: 17px;
+    color: #f0ebd8;
+}
